@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Nutrition Experts - Tenamagebeta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Specific styles for the nutritionists page */
+        .expert-detail-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-bottom: 50px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .expert-detail-card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .expert-detail-image {
+            width: 40%;
+            height: 450px;
+            overflow: hidden;
+        }
+        .expert-detail-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .expert-detail-image img:hover {
+            transform: scale(1.05);
+        }
+        .expert-detail-content {
+            width: 60%;
+            padding: 40px;
+        }
+        .expert-detail-content h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .expert-detail-content p.expert-title {
+            color: var(--accent);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .expert-detail-content p.expert-bio {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .expert-detail-specialties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .expert-detail-specialties .specialty {
+            background: rgba(7, 140, 3, 0.1);
+            color: var(--primary);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 992px) {
+            .expert-detail-card {
+                flex-direction: column;
+            }
+            .expert-detail-card:nth-child(even) {
+                flex-direction: column;
+            }
+            .expert-detail-image, .expert-detail-content {
+                width: 100%;
+            }
+            .expert-detail-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Tenama Gebeta Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>Tenamagebeta</h1>
+                    <p>Ethiopian Heritage Nutrition</p>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="nutritionists.html" class="active">Nutritionists</a></li>
+                    <li><a href="culture.html">Food Culture</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search recipes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="nutritionists-page" style="padding: 100px 0;">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team of Experts</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem;">
+                Our team combines deep knowledge of traditional Ethiopian culinary practices with modern nutritional science to provide you with the most accurate and helpful information.
+            </p>
+
+            <div class="expert-detail-card">
+                <div class="expert-detail-image">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Dr. Alem Gebre">
+                </div>
+                <div class="expert-detail-content">
+                    <h3>Dr. Alem Gebre</h3>
+                    <p class="expert-title">PhD in Nutritional Science</p>
+                    <p class="expert-bio">Dr. Alem is a leading researcher in the field of indigenous Ethiopian crops and their health benefits. With over 15 years of experience, his work focuses on the nutritional composition of grains like **teff** and **sorghum**, as well as the benefits of traditional fermentation methods. He is passionate about bringing ancient wisdom into modern dietary practices.</p>
+                    <div class="expert-detail-specialties">
+                        <span class="specialty">Teff Nutrition</span>
+                        <span class="specialty">Fermented Foods</span>
+                        <span class="specialty">Plant-Based Diets</span>
+                        <span class="specialty">Agroecology</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="expert-detail-card">
+                <div class="expert-detail-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Nutritionist Selam">
+                </div>
+                <div class="expert-detail-content">
+                    <h3>Nutritionist Selam Fesseha</h3>
+                    <p class="expert-title">Clinical Nutrition Specialist</p>
+                    <p class="expert-bio">Selam has a deep understanding of how to use Ethiopian cuisine as a therapeutic tool. She works with clients to create personalized meal plans using traditional foods to manage and prevent chronic conditions such as **diabetes**, **hypertension**, and **obesity**. Her approach emphasizes balanced, wholesome eating rooted in cultural heritage.</p>
+                    <div class="expert-detail-specialties">
+                        <span class="specialty">Diabetes Management</span>
+                        <span class="specialty">Heart Health</span>
+                        <span class="specialty">Weight Management</span>
+                        <span class="specialty">Therapeutic Nutrition</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="expert-detail-card">
+                <div class="expert-detail-image">
+                    <img src="https://images.unsplash.com/photo-1556157382-97eda2f9e946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Chef Yordanos">
+                </div>
+                <div class="expert-detail-content">
+                    <h3>Chef Yordanos Hailu</h3>
+                    <p class="expert-title">Culinary Nutrition Expert</p>
+                    <p class="expert-bio">Chef Yordanos is a celebrated chef who is committed to making healthy Ethiopian cooking accessible to everyone. She develops and tests our recipes, ensuring they are not only authentic and delicious but also nutritionally sound. Her expertise lies in modernizing traditional dishes to be lighter and more suitable for contemporary lifestyles without losing their rich flavor or heritage.</p>
+                    <div class="expert-detail-specialties">
+                        <span class="specialty">Traditional Cooking</span>
+                        <span class="specialty">Recipe Development</span>
+                        <span class="specialty">Healthy Modifications</span>
+                        <span class="specialty">Food Preservation</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>Tenamagebeta</h3>
+                <p>Preserving Ethiopian heritage through nourishing food and ancient wisdom.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="nutritionists.html">Nutritionists</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</p>
+                <p><i class="fas fa-phone"></i> +251 911 234 567</p>
+                <p><i class="fas fa-envelope"></i> info@tenamagebeta.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Tenamagebeta. All Rights Reserved.
+        </div>
+    </footer>
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainNav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
