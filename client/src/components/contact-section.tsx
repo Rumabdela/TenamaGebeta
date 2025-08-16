@@ -112,8 +112,8 @@ export default function ContactSection() {
     },
     {
       icon: <MessageSquare className="text-ethiopian-green" />,
-      label: "Telegram",
-      value: "@TenamagebetaSupport"
+      label: "Telegram Support",
+      value: "https://t.me/TenamaGebeta"
     }
   ];
 
@@ -122,7 +122,7 @@ export default function ContactSection() {
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: MessageSquare, href: "#", label: "Telegram" }
+    { icon: MessageSquare, href: "https://t.me/TenamaGebeta", label: "Telegram" }
   ];
 
   return (

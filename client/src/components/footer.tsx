@@ -32,7 +32,7 @@ export default function Footer() {
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: MessageSquare, href: "#", label: "Telegram" }
+    { icon: MessageSquare, href: "https://t.me/TenamaGebeta", label: "Telegram" }
   ];
 
   const roadmapItems = [

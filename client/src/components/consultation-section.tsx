@@ -87,7 +87,7 @@ export default function ConsultationSection() {
   const packages = [
     {
       name: "Single Session",
-      price: "$45",
+      price: "2,500 ETB",
       features: [
         "60-minute consultation",
         "Basic meal plan",
@@ -97,7 +97,7 @@ export default function ConsultationSection() {
     },
     {
       name: "Monthly Package", 
-      price: "$120",
+      price: "6,500 ETB",
       features: [
         "3 consultation sessions",
         "Detailed meal planning",
@@ -108,7 +108,7 @@ export default function ConsultationSection() {
     },
     {
       name: "Transformation Program",
-      price: "$300", 
+      price: "16,000 ETB", 
       features: [
         "3-month program",
         "Weekly check-ins",
